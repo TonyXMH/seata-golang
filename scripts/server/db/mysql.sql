@@ -1,5 +1,7 @@
 -- -------------------------------- The script used when storeMode is 'db' --------------------------------
 -- the table to store GlobalSession data
+CREATE DATABASE IF NOT EXISTS  `seata`
+
 CREATE TABLE IF NOT EXISTS `global_table`
 (
     `xid`                       VARCHAR(128) NOT NULL,
